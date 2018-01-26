@@ -33,6 +33,8 @@ class Vehicle(object):
         if ValidVin:
             print("Vin is Valid")
             self.VIN = VIN
+        else:
+            raise ValueError("Vin Invalid")
         self.Status = StatusCodes.standby
 
     def __str__(self):
